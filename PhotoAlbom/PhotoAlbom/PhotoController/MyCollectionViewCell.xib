@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MyCollectionViewCell" id="gTV-IL-0wX" customClass="MyCollectionViewCell" customModule="PhotoAlbom" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="190"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="190"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OnU-bN-Wcn">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="190"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FLx-H2-3Bl">
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="190"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="FLx-H2-3Bl" secondAttribute="trailing" id="IlQ-A7-thg"/>
+                            <constraint firstItem="FLx-H2-3Bl" firstAttribute="centerX" secondItem="OnU-bN-Wcn" secondAttribute="centerX" id="a4q-Uz-yjm"/>
+                            <constraint firstAttribute="bottom" secondItem="FLx-H2-3Bl" secondAttribute="bottom" id="dfs-Uc-Oeg"/>
+                            <constraint firstAttribute="width" secondItem="FLx-H2-3Bl" secondAttribute="width" id="fBb-f1-MHv"/>
+                            <constraint firstItem="FLx-H2-3Bl" firstAttribute="top" secondItem="myc-l5-7ag" secondAttribute="top" id="gKd-YS-K7c"/>
+                            <constraint firstAttribute="height" secondItem="FLx-H2-3Bl" secondAttribute="height" id="yLx-BG-a83"/>
+                        </constraints>
+                        <viewLayoutGuide key="contentLayoutGuide" id="gVJ-Sm-MFq"/>
+                        <viewLayoutGuide key="frameLayoutGuide" id="myc-l5-7ag"/>
+                    </scrollView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="OnU-bN-Wcn" secondAttribute="bottom" id="Ajz-3a-M7q"/>
+                <constraint firstItem="OnU-bN-Wcn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="N93-Cg-HdB"/>
+                <constraint firstItem="OnU-bN-Wcn" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Q5o-if-blR"/>
+                <constraint firstAttribute="trailing" secondItem="OnU-bN-Wcn" secondAttribute="trailing" id="gJI-k1-GL7"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="200" height="190"/>
+            <connections>
+                <outlet property="myImageView" destination="FLx-H2-3Bl" id="vdi-S8-fkA"/>
+                <outlet property="scrollView" destination="OnU-bN-Wcn" id="TUc-R0-x95"/>
+            </connections>
+            <point key="canvasLocation" x="56.521739130434788" y="-9.375"/>
+        </collectionViewCell>
+    </objects>
+</document>
